@@ -1,16 +1,21 @@
-# Fresh project
+# 🖼️ Fresh Indexhibit
 
-Your new Fresh project is ready to go. You can follow the Fresh "Getting
-Started" guide here: https://fresh.deno.dev/docs/getting-started
+Classic Indexhibit, now in Fresh and Deno. You're welcome. 
 
-### Usage
-
-Make sure to install Deno: https://deno.land/manual/getting_started/installation
-
-Then start the project:
+## Quick Start
 
 ```
 deno task start
 ```
 
-This will watch the project directory and restart as necessary.
+Boiiiom! Your Indexhibit-style site is up and running.
+
+## 🛠️ Built With
+
+- [Fresh](https://fresh.deno.dev/)
+- [Deno](https://deno.land/)
+
+
+## Deploying
+
+Whatever you want.
