@@ -1,0 +1,12 @@
+# dotenv environment variable files
+.env
+.env*
+
+# vscode
+.vscode/
+
+# ignore bash script in /static/projects/
+static/bash/*.sh
+
+# ignore the _fresh folder
+_fresh/
