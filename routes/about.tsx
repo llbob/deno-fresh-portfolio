@@ -11,19 +11,17 @@ export const handler: Handlers<AboutContent> = {
 export default function About({ data }: PageProps<AboutContent>) {
   return (
     <MainLayout>
-      <div class="page-wrapper">
-        <div class="page-content">
-          {/* <h1 class="title">{data.title}</h1> */}
+      <div class="bg-white">
+        <div class="max-w-3xl space-y-8">
           {data.paragraphs.map((paragraph, index) => (
-            <p key={index} class="message">{paragraph}</p>
+            <p key={index}>{paragraph}</p>
           ))}
-          <p class="message">
-            <a class="press-link" href="/cv">
+          <p>
+            <a class="link" href="/cv">
               Link to CV
             </a>
           </p>
-          <h2 class="cv-title"></h2>
-          <img class="avatar" src={data.imageUrl} alt="Vicky Am See" />
+          <img class="w-full h-auto rounded" src={data.imageUrl} alt="..." />
         </div>
       </div>
     </MainLayout>

@@ -11,11 +11,11 @@ export const handler: Handlers<HomeContent> = {
 export default function Home({ data }: PageProps<HomeContent>) {
   return (
     <MainLayout>
-      <div class="page-wrapper">
-        <div class="page-content">
+      <div class="max-w-3xl">
+        <div>
           {/* <h1 class="title">{data.title}</h1> */}
           <img
-            class="projects-image mb-4"
+            className="index-image"
             src={data.imageUrl}
             alt={data.title}
           />

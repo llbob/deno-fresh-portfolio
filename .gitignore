@@ -5,8 +5,8 @@
 # vscode
 .vscode/
 
-# ignore bash script in /static/projects/
-static/bash/*.sh
+# ignore bash script folder
+static/bash/
 
 # ignore the _fresh folder
 _fresh/

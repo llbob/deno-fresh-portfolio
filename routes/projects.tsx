@@ -18,28 +18,25 @@ export default function ProjectsPage({ data }: PageProps<Project[]>) {
   }
   return (
     <MainLayout>
-      <div class="page-wrapper">
-        <div class="projects-content">
-          {/* <h1 class="title">Projects</h1> */}
-          <div class="projects-innerwrapper">
-            {data.map((project) => (
-              <div class="projects-card" key={project.id}>
-                <a
-                  href={`/projects/${encodeURIComponent(
-                    project.title.replace(/\s+/g, "-").toLowerCase(),
-                  )}`}
-                >
-                  <h5 class="h5">{project.title}</h5>
-                  <h5 class="h5">Year: {project.year}</h5>
-                  <img
-                    class="projects-image"
-                    src={project.imageUrls[0]}
-                    alt={project.title}
-                  />
-                </a>
-              </div>
-            ))}
-          </div>
+      <div class="bg-white">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {data.map((project) => (
+            <div class="mb-16" key={project.id}>
+              <a
+                href={`/projects/${encodeURIComponent(
+                  project.title.replace(/\s+/g, "-").toLowerCase(),
+                )}`}
+              >
+                <p class="text-xl font-serif">{project.title}</p>
+                <p class="text-xl font-serif mb-2">Year: {project.year}</p>
+                <img
+                  class="projects-image"
+                  src={project.imageUrls[0]}
+                  alt={project.title}
+                />
+              </a>
+            </div>
+          ))}
         </div>
       </div>
     </MainLayout>

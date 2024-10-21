@@ -1,27 +1,32 @@
-# 🖼️ Fresh Indexhibit
+# Deno Fresh Indexhibit portfolio boiler? you're welcome
 
-Classic Indexhibit, now in Fresh and Deno. You're welcome. 
+The indexhibit theme is a classic, and i felt like giving it a go as a way of getting to know Deno and Fresh. Currently i haven't implemented any cms, but within the routes/data/... you can easily swap out the curr placeholder content for your own. 
 
-## Quick Start
+## How to?
 
 ```
 deno task start
 ```
 
-Boiiiom! Your Indexhibit-style site is up and running.
+Boiiiom! Your indexhibit-style site is up and running. I kept the styling lowkey, in hopes that it would be most intuitive to build this into something completely different!
 
-## 🛠️ Built With
+## Screenshots
 
-- [Fresh](https://fresh.deno.dev/)
-- [Deno](https://deno.land/)
+### Desktop
 
+![Desktop Index](static/readme-images/desktop-index.jpeg)
+![Desktop About](static/readme-images/desktop-about.jpeg)
+![Desktop CV](static/readme-images/desktop-cv.jpeg)
+![Desktop Press](static/readme-images/desktop-press.jpeg)
+![Desktop Projects](static/readme-images/desktop-projects.jpeg)
 
-## Deploying
+### Mobile
 
-Whatever you want.
+![Mobile Index](static/readme-images/mobile-index.jpeg)
+![Mobile Single Project](static/readme-images/mobile-single-project.jpeg)
 
-## Notes:
+## ...
 
-- This is a work in progress.
-- I'm aware that the styling is a bit all over the place. Initially i wanted to avoid twind, but then i sadly took a liking to it while this project was on pause. 
-- The project data is in the /routes/data folder - this to make it simple for outsiders to change the content - cms incoming?
+[![Made with Deno](static/readme-images/deno2.png)](https://deno.com)
+[![Made with Fresh](https://fresh.deno.dev/fresh-badge.svg)](https://fresh.deno.dev)
+

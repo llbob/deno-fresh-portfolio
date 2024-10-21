@@ -11,13 +11,12 @@ export const handler: Handlers<PressContent> = {
 export default function Press({ data }: PageProps<PressContent>) {
   return (
     <MainLayout>
-      <div class="page-wrapper">
-        <div class="page-content">
-          {/* <h1 class="title">{data.title}</h1> */}
+      <div class="bg-white">
+        <div class="max-w-3xl space-y-8">
           {data.items.map((item, index) => (
-            <p key={index} class="message">
+            <p key={index}>
               <a
-                class="press-link"
+                class="link"
                 href={item.url}
               >
                 {item.title}

@@ -8,20 +8,21 @@ export function MainLayout({ children }: { children: JSX.Element }) {
       <head>
         <StripeScript />
       </head>
-      <body>
-        <div class="app">
-          <a href="/" class="title-card">
-            <span class="page-name h5 page-name-item">Deno Fresh Indexhibit</span>
+      <body class="font-sans leading-relaxed">
+        <div class="max-w-none mx-4 my-4">
+          <a href="/" class="block mb-2 md:mb-4 lg:mb-8">
+            <span class="text-xl font-serif hover:underline">Deno Fresh Indexhibit</span>
           </a>
-          <div class="app-container">
-            <nav class="main-menu">
-              <ul>
-                <li><a href="/projects" class="menu-item"><span class="h5">Projects</span></a></li>
-                <li><a href="/press" class="menu-item"><span class="h5">Press</span></a></li>
-                <li><a href="/about" class="menu-item"><span class="h5">About</span></a></li>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <nav class="md:col-span-1">
+              <ul class="flex md:flex-col space-y-0 md:space-y-1 space-x-4 md:space-x-0">
+                <li><a href="/projects" class="font-serif text-xl hover:underline">Projects</a></li>
+                <li><a href="/about" class="font-serif text-xl hover:underline">About</a></li>
+                {/* <li><a href="/cv" class="font-serif text-xl hover:underline">CV</a></li> */}
+                <li><a href="/press" class="font-serif text-xl hover:underline">Press</a></li>
               </ul>
             </nav>
-            <main class="content">
+            <main class="md:col-span-3">
               {children}
             </main>
           </div>

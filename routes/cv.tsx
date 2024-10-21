@@ -11,15 +11,15 @@ export const handler: Handlers<CVContent> = {
 export default function CV({ data }: PageProps<CVContent>) {
   return (
     <MainLayout>
-      <div class="page-wrapper">
-        <div class="page-content">
-          <p class="message">{data.subtitle}</p>
+      <div class="bg-white">
+        <div class="max-w-3xl space-y-8">
+          <p class="mb-4">{data.subtitle}</p>
           {data.sections.map((section, index) => (
-            <div key={index}>
-              <h5 class="h5 cv-title">{section.title}</h5>
-              <ul class="cv-list">
+            <div key={index} class="mb-6">
+              <p class="text-xl font-serif mb-2">{section.title}</p>
+              <ul class="space-y-4">
                 {section.items.map((item, itemIndex) => (
-                  <li key={itemIndex} class="message">{item}</li>
+                  <li key={itemIndex}>{item}</li>
                 ))}
               </ul>
             </div>

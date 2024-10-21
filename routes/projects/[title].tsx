@@ -22,10 +22,10 @@ export default function ProjectPage({ data }: PageProps<Project>) {
 
   return (
     <MainLayout>
-      <div class="single-project">
+      <div class="max-w-3xl">
         <ProjectCarousel project={data} />
-        <h3 class="h3">{data.title}</h3>
-        <h4 className="h4 mb-4">Year: {data.year}</h4>
+        <p class="text-3xl font-serif mb-2">{data.title}</p>
+        <p class="text-2xl font-serif mb-4">Year: {data.year}</p>
         <div dangerouslySetInnerHTML={{ __html: data.descriptionText }} />
       </div>
     </MainLayout>
