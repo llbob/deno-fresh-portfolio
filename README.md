@@ -1,7 +1,7 @@
 # A Deno Fresh Indexhibit portfolio boilerplate
 
 Shout out to [Indexhibit](https://indexhibit.org/) for their cms and theme.
-This is a boilerplate for a portfolio site, built with Deno and Fresh inspired by the indexhibit theme, implemented currently with a flat file-like content management structure. It's a work in progress, but i hope it'll be useful for someone!
+This is a boilerplate for a portfolio site, built with Deno and Fresh inspired by the indexhibit of course, implemented currently with a 'flat file'-like structure ease of content management. It's a work in progress.
 
 ## How to?
 
