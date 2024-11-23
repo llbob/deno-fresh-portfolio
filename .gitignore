@@ -13,3 +13,4 @@ _fresh/
 
 # ignore the github folder
 .github/
+.github/workflows/
