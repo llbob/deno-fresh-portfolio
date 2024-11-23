@@ -6,6 +6,7 @@
     <img src="https://img.shields.io/badge/fresh-00bcd4?style=flat&logo=fresh&logoColor=white" alt="Made with Fresh" width="100">
   </a>
 </div>
+
 # A Deno Fresh minimal portfolio boilerplate
 Thanks to [Indexhibit](https://indexhibit.org/) for establishing a standard for a minimal portfolio site.
 
