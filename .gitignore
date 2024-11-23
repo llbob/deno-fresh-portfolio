@@ -10,3 +10,6 @@ static/bash/
 
 # ignore the _fresh folder
 _fresh/
+
+# ignore the github folder
+.github/

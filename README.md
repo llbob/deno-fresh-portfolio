@@ -1,7 +1,7 @@
-# A Deno Fresh Indexhibit portfolio boilerplate
+# A Deno Fresh minimal portfolio boilerplate
+Thanks to [Indexhibit](https://indexhibit.org/) for establishing a standard for a minimal portfolio site.
 
-Shout out to [Indexhibit](https://indexhibit.org/) for their cms and theme.
-This is a boilerplate for a portfolio site, built with Deno and Fresh inspired by the indexhibit of course, implemented currently with a 'flat file'-like structure ease of content management. It's a work in progress.
+This is a boilerplate for a portfolio site, built with Deno and Fresh inspired by the minimal aestherics of the indexhibit theme, implemented currently with a 'flat file'-like structure for ease of content management. It's a work in progress.
 
 ## How to?
 
@@ -11,7 +11,7 @@ This is a boilerplate for a portfolio site, built with Deno and Fresh inspired b
 deno task start
 ```
 
-Boiiiom! Your indexhibit-style site is up and running. I kept the styling lowkey, in hopes that it would be most intuitive to build this into something completely different!
+Boiiiom! Your minimal portfolio site is up and running. I kept the styling lowkey, in hopes that it would be most intuitive to build this into something completely different!
 
 ### Content
 Within the routes/data/... you can easily swap out the curr placeholder content for your own. 
@@ -39,9 +39,12 @@ Within the routes/data/... you can easily swap out the curr placeholder content 
 
 <div style="display: flex; align-items: center; gap: 10px;">
   <a href="https://deno.com">
-    <img src="static/readme-images/deno2.png" alt="Made with Deno" width="100">
+    <img src="https://img.shields.io/badge/deno-4f8b8b?style=flat&logo=deno&logoColor=white" alt="Made with Deno" width="100">
   </a>
   <a href="https://fresh.deno.dev">
-    <img src="https://fresh.deno.dev/fresh-badge.svg" alt="Made with Fresh" width="100">
+    <img src="https://img.shields.io/badge/fresh-00bcd4?style=flat&logo=fresh&logoColor=white" alt="Made with Fresh" width="100">
+  </a>
+  <a href="https://github.com/your-repo">
+    <img src="https://img.shields.io/badge/portfolio-ff4081?style=flat&logo=github&logoColor=white" alt="GitHub Portfolio" width="100">
   </a>
 </div>

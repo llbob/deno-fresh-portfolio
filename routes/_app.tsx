@@ -7,7 +7,7 @@ export default function App({ Component }: PageProps) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/style.css" />
-        <title>Deno Fresh Indexhibit</title>
+        <title>Deno Fresh Minimal Portfolio</title>
         <style>
           {`
             @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Domine:wght@400..700&display=swap');
