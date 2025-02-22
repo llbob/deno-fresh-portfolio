@@ -32,6 +32,7 @@ content:
         label: Content
         type: rich-text
         options:
+          format: html
           image:
             path: src/media/posts
             extensions: [ jpg, jpeg, png ]
