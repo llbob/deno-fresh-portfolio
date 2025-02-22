@@ -31,6 +31,7 @@ content:
       - name: body
         label: Content
         type: rich-text
+        description: "Use '/' to activate commands, mark text to edit it to links or style it. Also, importantly, for spacing between paragraphs use 2x 'shift+enter'."
         options:
           format: html
 
@@ -52,6 +53,7 @@ content:
       - name: body
         label: Content
         type: rich-text
+        description: "Use '/' to activate commands, mark text to edit it to links or style it. Also, importantly, for spacing between paragraphs use 2x 'shift+enter'."
         options:
           format: html
 
@@ -80,6 +82,7 @@ content:
       - name: body
         label: Content
         type: rich-text
+        description: "Use '/' to activate commands, mark text to edit it to links or style it. Also, importantly, for spacing between paragraphs use 2x 'shift+enter'."
         options:
           format: html
 
@@ -104,6 +107,7 @@ content:
       - name: body
         label: Content
         type: rich-text
+        description: "Use '/' to activate commands, mark text to edit it to links or style it. Also, importantly, for spacing between paragraphs use 2x 'shift+enter'."
         options:
           format: html
 
@@ -132,5 +136,6 @@ content:
       - name: body
         label: Content
         type: rich-text
+        description: "Use '/' to activate commands, mark text to edit it to links or style it. Also, importantly, for spacing between paragraphs use 2x 'shift+enter'."
         options:
           format: html
