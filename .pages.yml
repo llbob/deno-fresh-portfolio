@@ -32,10 +32,7 @@ content:
         label: Content
         type: rich-text
         options:
-          format: markdown
-          image:
-            path: src/media/posts
-            extensions: [ jpg, jpeg, png ]
+          format: html
 
   - name: about
     label: About
@@ -55,6 +52,8 @@ content:
       - name: body
         label: Content
         type: rich-text
+        options:
+          format: html
 
   - name: cv
     label: CV
@@ -81,6 +80,8 @@ content:
       - name: body
         label: Content
         type: rich-text
+        options:
+          format: html
 
   - name: index
     label: Home
@@ -103,6 +104,8 @@ content:
       - name: body
         label: Content
         type: rich-text
+        options:
+          format: html
 
   - name: press
     label: Press
@@ -129,3 +132,5 @@ content:
       - name: body
         label: Content
         type: rich-text
+        options:
+          format: html
