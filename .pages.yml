@@ -32,7 +32,9 @@ content:
         label: Content
         type: rich-text
         options:
-          format: markdown
+          image:
+            path: src/media/posts
+            extensions: [ jpg, jpeg, png ]
 
   - name: about
     label: About
