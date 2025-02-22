@@ -12,17 +12,20 @@ export async function getProjects(): Promise<Project[]> {
       );
       
       const { attrs, body } = extract(mdContent);
-      const { title, year, images } = attrs as {
+      const { title, year, imageUrl } = attrs as {
         title: string;
         year: number;
-        images: string[];
+        imageUrl: string | string[];
       };
 
+      // Handle both single imageUrl and array of imageUrls
+      const imageUrls = Array.isArray(imageUrl) ? imageUrl : [imageUrl];
+      
       projects.push({
-        id: dirEntry.name.replace('.md', ''),
+        id: title.toLowerCase().replace(/\s+/g, '-'),
         title,
         year,
-        images: images.map(img => {
+        images: imageUrls.map(img => {
           return img.replace(/^\/?(public\/)?/, '/');
         }),
         content: body

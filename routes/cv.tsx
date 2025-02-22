@@ -29,6 +29,7 @@ export default function CV({ data }: PageProps<CV>) {
               </ul>
             </div>
           ))}
+          <div dangerouslySetInnerHTML={{ __html: data.content }} />
         </div>
       </div>
     </MainLayout>
