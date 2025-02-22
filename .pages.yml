@@ -1,0 +1,125 @@
+media:
+  input: public/assets
+  output: /assets
+  categories: [ "image" ]
+
+content:
+  - name: projects
+    label: Projects
+    type: collection
+    path: _projects
+    view:
+      fields: [ title, imageUrl, description ]
+      primary: title
+      sort: [ title ]
+      default:
+        sort: title
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: imageUrl
+        label: Project Image
+        type: image
+        description: "Main image for the project"
+      - name: description
+        label: Description
+        type: text
+      - name: body
+        label: Content
+        type: rich-text
+
+  - name: about
+    label: About
+    type: file
+    path: about.md
+    format: yaml-frontmatter
+    fields:
+      - name: paragraphs
+        label: Paragraphs
+        type: text
+        list: true
+        description: "Add multiple paragraphs for the about section"
+      - name: imageUrl
+        label: Profile Image
+        type: image
+        description: "Profile or featured image"
+      - name: body
+        label: Content
+        type: rich-text
+
+  - name: cv
+    label: CV
+    type: file
+    path: cv.md
+    format: yaml-frontmatter
+    fields:
+      - name: subtitle
+        label: Subtitle
+        type: string
+      - name: sections
+        label: CV Sections
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Section Title
+            type: string
+            required: true
+          - name: items
+            label: Section Items
+            type: text
+            list: true
+      - name: body
+        label: Content
+        type: rich-text
+
+  - name: index
+    label: Home
+    type: file
+    path: index.md
+    format: yaml-frontmatter
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: imageUrl
+        label: Hero Image
+        type: image
+        description: "Main image for the homepage"
+      - name: message
+        label: Welcome Message
+        type: text
+        description: "Main welcome message or introduction"
+      - name: body
+        label: Content
+        type: rich-text
+
+  - name: press
+    label: Press
+    type: file
+    path: press.md
+    format: yaml-frontmatter
+    fields:
+      - name: items
+        label: Press Items
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Article Title
+            type: string
+            required: true
+          - name: url
+            label: Article URL
+            type: string
+            required: true
+            pattern: 
+              regex: '^https?://.*$'
+              message: "Please enter a valid URL starting with http:// or https://"
+      - name: body
+        label: Content
+        type: rich-text
