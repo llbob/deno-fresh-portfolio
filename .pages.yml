@@ -19,6 +19,7 @@ content:
       - name: title
         label: Title
         type: string
+        description: "Needs to be unique from title of any other project, otherwise pages will collide."
         required: true
       - name: year
         label: Year
