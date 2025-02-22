@@ -1,6 +1,6 @@
 ---
 title: Lorem ipsum dolor sit amet
-imageUrl: /assets/placeholder/image1.jpg
+imageUrl: /assets/placeholder/image11.jpg
 message: >+
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula dui
   faucibus, fringilla lectus et, finibus odio. Sed est mauris, rhoncus sit amet
