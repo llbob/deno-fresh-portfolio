@@ -22,7 +22,7 @@ content:
         required: true
       - name: year
         label: Year
-        type: text
+        type: number
       - name: imageUrl
         label: Project Images
         type: image
