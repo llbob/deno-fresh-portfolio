@@ -1,5 +1,5 @@
 ---
-subtitle: Artist and Designer
+subtitle: Lorem Ipsum Dolor
 sections:
   - title: Education
     items:
@@ -9,4 +9,5 @@ sections:
     items:
       - "2023: Solo Exhibition at Gallery X"
       - "2022: Group Show at Museum Y"
---- 
+---
+<p>Some content here</p>
