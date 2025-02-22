@@ -6,11 +6,6 @@ import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $about from "./routes/about.tsx";
 import * as $cv from "./routes/cv.tsx";
-import * as $data_about from "./routes/data/about.ts";
-import * as $data_cv from "./routes/data/cv.ts";
-import * as $data_home from "./routes/data/home.ts";
-import * as $data_press from "./routes/data/press.ts";
-import * as $data_projects from "./routes/data/projects.ts";
 import * as $index from "./routes/index.tsx";
 import * as $press from "./routes/press.tsx";
 import * as $projects from "./routes/projects.tsx";
@@ -24,11 +19,6 @@ const manifest = {
     "./routes/_app.tsx": $_app,
     "./routes/about.tsx": $about,
     "./routes/cv.tsx": $cv,
-    "./routes/data/about.ts": $data_about,
-    "./routes/data/cv.ts": $data_cv,
-    "./routes/data/home.ts": $data_home,
-    "./routes/data/press.ts": $data_press,
-    "./routes/data/projects.ts": $data_projects,
     "./routes/index.tsx": $index,
     "./routes/press.tsx": $press,
     "./routes/projects.tsx": $projects,

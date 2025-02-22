@@ -1,14 +1,19 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { MainLayout } from "../components/MainLayout.tsx";
-import { AboutContent, ABOUT_CONTENT } from "./data/about.ts";
+import { getAbout } from "../utils/about.ts";
+import type { About } from "../types/about.ts";
 
-export const handler: Handlers<AboutContent> = {
-  GET(_req, ctx) {
-    return ctx.render(ABOUT_CONTENT);
+export const handler: Handlers<About> = {
+  async GET(_req, ctx) {
+    const about = await getAbout();
+    if (!about) {
+      return ctx.render({ paragraphs: [], imageUrl: "", content: "" });
+    }
+    return ctx.render(about);
   },
 };
 
-export default function About({ data }: PageProps<AboutContent>) {
+export default function About({ data }: PageProps<About>) {
   return (
     <MainLayout>
       <div class="bg-white">

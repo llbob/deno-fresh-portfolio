@@ -1,14 +1,19 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { MainLayout } from "../components/MainLayout.tsx";
-import { HomeContent, HOME_CONTENT } from "./data/home.ts";
+import { getIndex } from "../utils/index.ts";
+import type { Index } from "../types/index.ts";
 
-export const handler: Handlers<HomeContent> = {
-  GET(_req, ctx) {
-    return ctx.render(HOME_CONTENT);
+export const handler: Handlers<Index> = {
+  async GET(_req, ctx) {
+    const index = await getIndex();
+    if (!index) {
+      return ctx.render({ title: "", imageUrl: "", message: "", content: "" });
+    }
+    return ctx.render(index);
   },
 };
 
-export default function Home({ data }: PageProps<HomeContent>) {
+export default function Home({ data }: PageProps<Index>) {
   return (
     <MainLayout>
       <div class="max-w-3xl">

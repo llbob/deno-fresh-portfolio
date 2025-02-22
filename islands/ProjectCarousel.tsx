@@ -1,6 +1,6 @@
 import { useSignal } from "@preact/signals";
 import { useEffect, useRef } from "preact/hooks";
-import { Project } from "../routes/data/projects.ts";
+import { Project } from "../types/project.ts";
 
 interface ProjectCarouselProps {
   project: Project;
@@ -12,11 +12,11 @@ export default function ProjectCarousel({ project, showNavigation = true }: Proj
   const carouselRef = useRef<HTMLDivElement>(null);
 
   const nextSlide = () => {
-    currentImageIndex.value = (currentImageIndex.value + 1) % project.imageUrls.length;
+    currentImageIndex.value = (currentImageIndex.value + 1) % project.images.length;
   };
 
   const previousSlide = () => {
-    currentImageIndex.value = (currentImageIndex.value - 1 + project.imageUrls.length) % project.imageUrls.length;
+    currentImageIndex.value = (currentImageIndex.value - 1 + project.images.length) % project.images.length;
   };
 
   useEffect(() => {
@@ -37,7 +37,7 @@ export default function ProjectCarousel({ project, showNavigation = true }: Proj
   return (
     <div className="relative overflow-hidden rounded-lg shadow-lg mb-4" ref={carouselRef} tabIndex={0}>
       <img
-        src={project.imageUrls[currentImageIndex.value]}
+        src={project.images[currentImageIndex.value]}
         alt={`${project.title} image ${currentImageIndex.value + 1}`}
         className="w-full h-auto object-cover transition-opacity duration-300"
       />
@@ -64,7 +64,7 @@ export default function ProjectCarousel({ project, showNavigation = true }: Proj
         </div>
       )}
       <div className="absolute bottom-4 left-0 right-0 flex justify-center">
-        {project.imageUrls.map((_, index) => (
+        {project.images.map((_, index) => (
           <button
             key={index}
             className={`w-2 h-2 mx-1 rounded-full transition-colors duration-300 ${

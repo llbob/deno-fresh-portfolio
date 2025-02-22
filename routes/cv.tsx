@@ -1,14 +1,19 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { MainLayout } from "../components/MainLayout.tsx";
-import { CVContent, CV_CONTENT } from "./data/cv.ts";
+import { getCV } from "../utils/cv.ts";
+import type { CV } from "../types/cv.ts";
 
-export const handler: Handlers<CVContent> = {
-  GET(_req, ctx) {
-    return ctx.render(CV_CONTENT);
+export const handler: Handlers<CV> = {
+  async GET(_req, ctx) {
+    const cv = await getCV();
+    if (!cv) {
+      return ctx.render({ subtitle: "", sections: [], content: "" });
+    }
+    return ctx.render(cv);
   },
 };
 
-export default function CV({ data }: PageProps<CVContent>) {
+export default function CV({ data }: PageProps<CV>) {
   return (
     <MainLayout>
       <div class="bg-white">
