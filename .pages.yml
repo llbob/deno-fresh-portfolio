@@ -32,8 +32,7 @@ content:
         label: Content
         type: rich-text
         options:
-          format: html
-          image: true
+          format: markdown
 
   - name: about
     label: About
