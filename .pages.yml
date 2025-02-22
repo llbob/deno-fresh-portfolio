@@ -31,7 +31,9 @@ content:
       - name: body
         label: Content
         type: rich-text
-        format: html
+        options:
+          format: html
+          image: true
 
   - name: about
     label: About
