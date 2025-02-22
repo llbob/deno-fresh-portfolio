@@ -1,7 +1,7 @@
 media:
   input: public/assets
   output: /assets
-  categories: [ "image" ]
+  categories: [ "image", "document", "audio"]
 
 content:
   - name: projects
