@@ -20,13 +20,14 @@ content:
         label: Title
         type: string
         required: true
-      - name: imageUrl
-        label: Project Image
-        type: image
-        description: "Main image for the project"
-      - name: description
-        label: Description
+      - name: year
+        label: Year
         type: text
+      - name: imageUrl
+        label: Project Images
+        type: image
+        list: true
+        description: "Project images for carousel"
       - name: body
         label: Content
         type: rich-text
