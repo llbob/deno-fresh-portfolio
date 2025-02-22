@@ -32,7 +32,7 @@ content:
         label: Content
         type: rich-text
         options:
-          format: html
+          format: markdown
           image:
             path: src/media/posts
             extensions: [ jpg, jpeg, png ]
