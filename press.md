@@ -1,7 +1,10 @@
 ---
 items:
-  - title: Interview in Design Magazine
+  - title: Lorem ipsum dolor sit
     url: https://example.com/interview
-  - title: Feature in Art Weekly
+  - title: Lorem ipsum dolor sitte sit
     url: https://example.com/feature
---- 
+  - title: Lorem ipsum dolor sit sit
+    url: https://example.com/feature
+---
+<p>Some content</p>
