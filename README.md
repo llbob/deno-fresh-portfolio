@@ -5,25 +5,26 @@
   <a href="https://fresh.deno.dev">
     <img src="https://img.shields.io/badge/fresh-00bcd4?style=flat&logo=fresh&logoColor=white" alt="Made with Fresh" width="100">
   </a>
+  <a href="https://pagescms.org">
+    <img src="https://img.shields.io/badge/pagescms-00bcd4?style=flat&logo=pagescms&logoColor=white" alt="Made with PagesCMS" width="100">
+  </a>
 </div>
 
-# A Deno Fresh minimal portfolio boilerplate
-Thanks to [Indexhibit](https://indexhibit.org/) for establishing a standard for a minimal portfolio site.
 
-This is a boilerplate for a portfolio site, built with Deno and Fresh inspired by the minimal aestherics of the indexhibit theme, implemented currently with a 'flat file'-like structure for ease of content management. It's a work in progress.
+# A Deno Fresh minimal portfolio boilerplate integrated with PagesCMS for easy content management
+This is a boilerplate for a portfolio site, built with Deno and Fresh inspired by the minimal aestherics of the indexhibit theme, implemented currently with a 'flat file'-like structure set up with frontmatter to be used with [PagesCMS](https://pagescms.org/).
 
 ## How to?
 
-### Start
+### To run it locally
 
 ```
 deno task start
 ```
 
-Boiiiom! Your minimal portfolio site is up and running. I kept the styling lowkey, in hopes that it would be most intuitive to build this into something completely different!
+### To use it with PagesCMS
 
-### Content
-Within the routes/data/... you can easily swap out the curr placeholder content for your own. 
+Simply clone the repo and open the project through PagesCMS' cloud-based CMS.
 
 ## Screenshots
 
