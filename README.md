@@ -10,21 +10,21 @@
   </a>
 </div>
 
+# Deno Fresh Portfolio Boilerplate
 
-# A Deno Fresh minimal portfolio boilerplate integrated with PagesCMS for easy content management
-This is a boilerplate for a portfolio site, built with Deno and Fresh inspired by the minimal aestherics of the indexhibit theme, implemented currently with a 'flat file'-like structure set up with frontmatter to be used with [PagesCMS](https://pagescms.org/).
+Inspired by Indexhibit, this portfolio boilerplate uses Deno Fresh and PagesCMS for easy content management.
 
-## How to?
+## How to use:
 
-### To run it locally
+### Run locally:
 
-```
+```bash
 deno task start
 ```
 
-### To use it with PagesCMS
+### Use with PagesCMS:
 
-Simply clone the repo and open the project through PagesCMS' cloud-based CMS.
+Clone the repo and open it in PagesCMS.
 
 ## Screenshots
 
@@ -44,7 +44,3 @@ Simply clone the repo and open the project through PagesCMS' cloud-based CMS.
   <img src="static/readme-images/mobile-index.jpeg" alt="Mobile Index" width="150">
   <img src="static/readme-images/mobile-single-project.jpeg" alt="Mobile Single Project" width="150">
 </div>
-
-## ...
-
-
