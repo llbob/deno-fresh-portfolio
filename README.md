@@ -16,15 +16,40 @@ Inspired by Indexhibit, this portfolio boilerplate uses Deno Fresh and PagesCMS 
 
 ## How to use:
 
+### Create a new repo from this template:
+
+Use the gh CLI or the GitHub website to create a new repo from this template. 
+For beginners, I recommend using the GitHub website and simply clicking the "Use this template" button.
+
+### Install Deno:
+
+Check the [Deno installation guide](https://docs.deno.com/runtime/getting_started/installation/) for your operating system.
+
 ### Run locally:
 
 ```bash
 deno task start
 ```
 
+### Run in cloud with Deno Deploy:
+
+#### Using CLI:
+
+Install the `deployctl` command:
+```bash
+deno install -gArf jsr:@deno/deployctl
+```
+
+Deploy the app:
+```bash
+deployctl deploy
+```
+
+Note: You don't need to use the CLI to deploy the app. This can also be done through the [Deno Deploy dashboard](https://deno.com/deploy).
+
 ### Use with PagesCMS:
 
-Clone the repo and open it in PagesCMS.
+Connect your github profile to PagesCMS and open your cloned repo in the CMS.
 
 ## Screenshots
 
